@@ -10,9 +10,9 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Request a custom fuel or lubricant quotation. Call 087 255 3185, email info@ivevaneme.com or visit our Boksburg, Gauteng office.",
+          "Request a custom fuel or lubricant quotation. Call 073 858 1793, email andanombexaza@gmail.com or visit our Boksburg, Gauteng office.",
       },
-      { property: "og:title", content: "Contact Ivevane Minerals and Energy" },
+      { property: "og:title", content: "Contact Duabi Minerals and Energy" },
       {
         property: "og:description",
         content: "Tell us about your operation and we'll prepare a tailored quotation.",
@@ -137,29 +137,25 @@ function Contact() {
                 <li className="flex gap-3">
                   <Phone className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <span>
-                    <a href="tel:+27872553185" className="block hover:text-accent">
-                      087 255 3185
+                    <a href="tel:+27738591793" className="block hover:text-accent">
+                      073 859 1793
                     </a>
-                    <a href="tel:+27681496468" className="block hover:text-accent">
-                      068 149 6468
+                    <a href="tel:+27738591793" className="block hover:text-accent">
+                      073 859 1793
                     </a>
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <Mail className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <a href="mailto:info@ivevaneme.com" className="hover:text-accent">
-                    info@ivevaneme.com
+                    andanombexaza@gmail.com
                   </a>
                 </li>
-                <li className="flex gap-3">
-                  <Globe className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-                  <span>www.ivevaneme.com</span>
-                </li>
+               
                 <li className="flex gap-3">
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <span className="text-muted-foreground">
-                    Eastlands Office Park, Bentel Avenue, 1st Floor, Regus Building, Jansen Park,
-                    Boksburg, 1501
+                    Sunward,Boksburg, 1501
                   </span>
                 </li>
               </ul>
