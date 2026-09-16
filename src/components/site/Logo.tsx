@@ -32,14 +32,14 @@ export function Logo({ onNavy = false }: { onNavy?: boolean }) {
             onNavy ? "text-white" : "text-navy"
           }`}
         >
-          IVEVANE
+          DUBAI
         </span>
         <span
           className={`block text-[0.6rem] font-semibold uppercase tracking-[0.22em] ${
             onNavy ? "text-white/70" : "text-muted-foreground"
           }`}
         >
-          Minerals &amp; Energy
+          Projects &amp; Minerals Resources PTY LTD
         </span>
       </span>
     </Link>
