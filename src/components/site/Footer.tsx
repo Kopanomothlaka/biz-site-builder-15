@@ -52,15 +52,12 @@ export function Footer() {
                 andanombexeza@gmail.com
               </a>
             </li>
-            <li className="flex gap-2">
-              <Globe className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>www.ivevaneme.com</span>
-            </li>
+           
             <li className="flex gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
               <span>
-                Eastlands Office Park, Bentel Avenue, 1st Floor, Regus Building, Jansen Park,
-                Boksburg, 1501
+                         Sunward,Boksburg, 1501
+
               </span>
             </li>
           </ul>
