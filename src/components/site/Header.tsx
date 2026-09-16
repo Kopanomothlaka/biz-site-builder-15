@@ -29,8 +29,8 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <a href="tel:+27872553185" className="btn-primary">
-            <Phone className="h-4 w-4" /> 087 255 3185
+          <a href="tel:+27738591793" className="btn-primary">
+            <Phone className="h-4 w-4" /> 073 859 1793
           </a>
         </nav>
 
