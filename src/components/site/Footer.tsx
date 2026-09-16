@@ -41,15 +41,15 @@ export function Footer() {
             <li className="flex gap-2">
               <Phone className="mt-0.5 h-4 w-4 shrink-0" />
               <span>
-                087 255 3185
+                073 859 1793
                 <br />
-                068 149 6468
+                073 859 1793
               </span>
             </li>
             <li className="flex gap-2">
               <Mail className="mt-0.5 h-4 w-4 shrink-0" />
-              <a href="mailto:info@ivevaneme.com" className="hover:text-white">
-                info@ivevaneme.com
+              <a href="mailto:andanombexeza@gmail.com" className="hover:text-white">
+                andanombexeza@gmail.com
               </a>
             </li>
             <li className="flex gap-2">
@@ -68,7 +68,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/15">
         <div className="container-x py-5 text-xs text-white/55">
-          © {new Date().getFullYear()} Ivevane Minerals and Energy (Pty) Ltd. All rights reserved.
+          © {new Date().getFullYear()} Dubai Minerals and Energy (Pty) Ltd. All rights reserved.
         </div>
       </div>
     </footer>
