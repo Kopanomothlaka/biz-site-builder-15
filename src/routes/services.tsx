@@ -1,24 +1,27 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
-import fuelDepot from "@/assets/fuel-depot.jpg";
-import lubricants from "@/assets/lubricants.jpg";
-import onsiteService from "@/assets/onsite-service.jpg";
+import undergroundTank from "@/assets/underground-tank.jpg";
+import tankMaintenance from "@/assets/tank-maintenance.jpg";
+import electricalSupplies from "@/assets/electrical-supplies.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services | Bulk Fuel, Lubricants & On-Site Support" },
+      { title: "Services | Tank Manufacture, Maintenance, Diesel & Electrical" },
       {
         name: "description",
         content:
-          "Bulk diesel 50ppm, ULP petrol, LPG, Jet A-1 and IP supply, plus engine, hydraulic and industrial lubricants and on-site lubrication services.",
+          "Manufacturing and maintenance of underground and above-ground gas, diesel and water tanks, diesel 50ppm and 10ppm, oil, paraffin and electrical appliances.",
       },
-      { property: "og:title", content: "Ivevane Services | Fuel, Lubricants & On-Site Support" },
+      {
+        property: "og:title",
+        content: "Services | Dubai Projects and Mineral Resources",
+      },
       {
         property: "og:description",
         content:
-          "Comprehensive fuel supply, OEM-spec lubricants and on-site lubrication programmes for industrial clients.",
+          "Tank manufacture and maintenance, fuel supply and electrical appliances for mining, civil and petroleum clients.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -27,121 +30,61 @@ export const Route = createFileRoute("/services")({
   component: Services,
 });
 
-const fuel = [
+const manufacture = [
   {
-    t: "Bulk Diesel (50ppm)",
+    t: "Underground Tanks",
     items: [
-      "50ppm low-sulphur diesel for fleets & industry",
-      "Scheduled bulk delivery to your site",
-      "Emergency fuel supply available",
-      "Contract supply agreements",
-      "SA fuel standards compliant",
+      "Gas, diesel and water tanks manufactured to specification",
+      "Installation for petroleum and gas companies",
+      "Suited to sites using a bactofuge in production",
+      "Quality assured with international partners",
     ],
   },
   {
-    t: "ULP Petrol",
+    t: "Above-Ground Tanks",
     items: [
-      "Unleaded petrol for light commercial vehicles",
-      "Fleet and facility supply options",
-      "Secure on-site storage supply",
-      "Competitive volume pricing",
-    ],
-  },
-  {
-    t: "LPG — Liquefied Petroleum Gas",
-    items: [
-      "Industrial, commercial & hospitality supply",
-      "Cylinder and bulk supply options",
-      "Safe delivery & regulatory compliance",
-      "Reliable scheduled deliveries",
-    ],
-  },
-  {
-    t: "Jet Fuel & IP",
-    items: [
-      "Jet A-1 for aviation operations",
-      "Illuminating Paraffin (IP) for industry",
-      "SANS and aviation standards compliant",
-      "Custom delivery scheduling",
+      "Upper-ground gas, diesel and water tanks",
+      "Fabrication for mining, civil and industrial sites",
+      "Installation and commissioning",
+      "Professional workmanship and standards",
     ],
   },
 ];
 
-const lubes = [
+const maintenance = [
   {
-    t: "Engine Oils",
+    t: "Tank Maintenance",
     items: [
-      "Full synthetic, semi-synthetic & mineral grades",
-      "Petrol & diesel engine oils",
-      "Heavy-duty fleet engine oils",
-      "Extended drain performance oils",
+      "Maintenance of underground and above-ground tanks",
+      "Inspection, servicing and repair",
+      "Gas, diesel and water tank support",
+      "Ongoing maintenance arrangements",
     ],
   },
   {
-    t: "Hydraulic & Industrial Oils",
+    t: "Spares & Advisory",
     items: [
-      "Hydraulic oils for construction & mining",
-      "Gear oils for gearboxes & differentials",
-      "Automatic & manual transmission fluids",
-      "Compressor, turbine & cutting oils",
-    ],
-  },
-  {
-    t: "Greases & Specialty Lubricants",
-    items: [
-      "Lithium, calcium & synthetic greases",
-      "High-temperature & extreme-pressure options",
-      "Bearing, chassis & multi-purpose greases",
-      "Wire rope & open gear lubricants",
-    ],
-  },
-  {
-    t: "Industrial Lubricants",
-    items: [
-      "Circulating oils for plant & machinery",
-      "Food-grade lubricants where required",
-      "Custom specification & sourcing",
-      "Lubricant consolidation programmes",
+      "Expertise in spares departments across our industries",
+      "Innovative, solution-based advice",
+      "Support for mining, civil and emerging construction clients",
+      "Support for diesel and petroleum companies",
     ],
   },
 ];
 
-const onsite = [
+const supply = [
   {
-    t: "Lubrication Inspections",
+    t: "Fuel & Fluids",
     items: [
-      "Scheduled on-site inspection visits",
-      "Identify over/under-lubricated points",
-      "Visual & condition-based assessment",
-      "Detailed findings & action reports",
+      "Diesel 50ppm supply",
+      "Diesel 10ppm supply",
+      "Oil supply",
+      "Paraffin supply",
     ],
   },
   {
-    t: "Equipment Oil Checks & Changes",
-    items: [
-      "On-site oil sampling & analysis",
-      "Oil level checks across all equipment",
-      "Scheduled changes per OEM specs",
-      "Contamination detection & advice",
-    ],
-  },
-  {
-    t: "Lubricant Management",
-    items: [
-      "Product selection per OEM requirements",
-      "Lubrication register development",
-      "Product & inventory consolidation",
-      "Ongoing specification management",
-    ],
-  },
-  {
-    t: "Scheduled Maintenance Support",
-    items: [
-      "Weekly, monthly & quarterly visits",
-      "Maintenance team integration",
-      "Emergency callout support",
-      "Technical advisory on wear & failures",
-    ],
+    t: "Electrical Appliances",
+    items: ["Cables and wires", "Switches and plugs", "Bulbs", "Related electrical supplies"],
   },
 ];
 
@@ -211,47 +154,47 @@ function Services() {
   return (
     <SiteLayout>
       <PageHero
-        eyebrow="Our Services"
-        title="Fuel supply, lubricants and on-site technical support"
-        intro="We supply commercial, industrial and government clients — from scheduled bulk deliveries to 24/7 emergency supply — and back it with qualified on-site service."
+        eyebrow="Services Offered"
+        title="Tank manufacture, maintenance and industrial supply"
+        intro="A registered mining and civil, water, petroleum and gas tank manufacture and maintenance service provider, supplying fuel, oil, paraffin and electrical appliances."
       />
 
       <Block
-        id="fuel"
-        eyebrow="Fuel Supply"
-        title="Reliable fuel, delivered on schedule"
-        intro="A comprehensive range of fuel products with contract supply agreements and 24/7 emergency response for critical operations."
-        image={fuelDepot}
-        alt="Bulk fuel storage tank farm at dusk"
-        groups={fuel}
+        id="manufacturing"
+        eyebrow="Manufacturing"
+        title="Underground and above-ground tanks"
+        intro="We manufacture and install underground and upper-ground gas, diesel and water tanks for petroleum and gas companies across South Africa, holding to the highest standard of workmanship."
+        image={undergroundTank}
+        alt="Underground fuel tank being lowered into an excavation by crane"
+        groups={manufacture}
       />
 
       <Block
-        id="lubricants"
-        eyebrow="Lubricants Supply"
-        title="Maximum protection under demanding conditions"
-        intro="From light vehicles to heavy mining equipment and complex industrial plant, we supply the right product for every application."
-        image={lubricants}
-        alt="Industrial lubricant drums and containers in a warehouse"
-        groups={lubes}
+        id="maintenance"
+        eyebrow="Maintenance"
+        title="Keeping tanks safe and serviceable"
+        intro="Our maintenance service covers underground and above-ground gas, diesel and water tanks, backed by spares expertise and practical technical advice."
+        image={tankMaintenance}
+        alt="Technician maintaining valves on a storage tank"
+        groups={maintenance}
         reverse
         tinted
       />
 
       <Block
-        id="on-site"
-        eyebrow="On-Site Services"
-        title="Technical support at your facility"
-        intro="Our on-site lubrication programme reduces downtime, extends equipment life and keeps your operation at peak efficiency."
-        image={onsiteService}
-        alt="Technician servicing heavy equipment on site"
-        groups={onsite}
+        id="supply"
+        eyebrow="Supply"
+        title="Fuel, fluids and electrical appliances"
+        intro="Alongside tanks, we supply diesel 50ppm and 10ppm, oil and paraffin, as well as electrical appliances including cables, wires, switches, plugs and bulbs."
+        image={electricalSupplies}
+        alt="Electrical supplies including cables, switches, plugs and bulbs on warehouse shelves"
+        groups={supply}
       />
 
       <section className="navy-panel">
         <div className="container-x flex flex-col items-start justify-between gap-6 py-14 md:flex-row md:items-center">
           <h2 className="text-2xl text-white md:text-3xl">
-            Let's match the right products to your equipment
+            Tell us what your project needs
           </h2>
           <Link to="/contact" className="btn-primary">
             Request a quotation <ArrowRight className="h-4 w-4" />
